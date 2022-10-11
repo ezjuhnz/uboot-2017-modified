@@ -27,7 +27,6 @@ export LC_COLLATE LC_NUMERIC
 
 # Avoid interference with shell env settings
 unexport GREP_OPTIONS
-
 # We are using a recursive build, so we need to do a little thinking
 # to get the ordering right.
 #
@@ -241,7 +240,7 @@ export	HOSTARCH HOSTOS
 
 #########################################################################
 ARCH = arm
-CROSS_COMPILE ?= arm-linux-gnueabihf- 
+CROSS_COMPILE ?= /home/ezjuhnz/ToolChain/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 # set default to nothing for native builds
 ifeq ($(HOSTARCH),$(ARCH))
 CROSS_COMPILE ?=
